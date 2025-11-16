@@ -7,13 +7,13 @@ def can_split_watermelon(w: int) -> bool:
   """
 
 #check if w is even
-is_even = (w % 2 == 0)
+  is_even = (w % 2 == 0)
 
 #check that the weight is greater than 2 so the answer is positive
-greater_than_two = (w > 2)
+  greater_than_two = (w > 2)
 
 #both things need to be true
-return is_even and greater_than_two
+  return is_even and greater_than_two
 
 def main():
   #read raw input
@@ -48,7 +48,7 @@ def main():
   result = can_split_watermelon(w)
 
   #print answer
-  print("YES" if result esle "NO")
+  print("YES" if result else "NO")
 
 if __name__ == "__main__":
     main()
